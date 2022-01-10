@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- Font link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Estonia&family=Montagu+Slab&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Estonia&family=M+PLUS+Code+Latin:wght@500&family=Montagu+Slab&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@700&family=Estonia&family=M+PLUS+Code+Latin:wght@500&family=Montagu+Slab&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/2e92afc907.js" crossorigin="anonymous"></script>
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    
+      
+
+</head>
+<body>
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark  mb-5" id="top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+             <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Home" class='active'>Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Tools">Tools</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contacts">Contact</a>
+                  </li>
+                </ul>   
+            </div>         
+    </nav>
+</header>
+       
+
+<!-- Home Section -->
+<div id="Home" class="container-fluid text-center ">
+		<div class="row" id="about">
+			<div class="col-md-6 order-2 order-md-2 mx-auto img-fluid my-5 text-justify ">
+				<p id="intro" class="mt-5s ">
+					<strong>Hey! I'm Shan!</strong>
+				</p>
+				<h4 class="my-2 ">Web Developer At Zuitt</h4>
+				<h5 class="my-3 ">{{Dream | Believe | Ponder}}</h5>
+				<p class=" mr-5 ">
+					 I am an aspiring Web Developer at Zuitt Academy. My dream career is to become a Professional and Successful Software Engineer. I am tech-savvy and I enjoy coding. I spend my spare time studying about Web Development. The Languages I have encountered so far are HTML, CSS, and JavaScript.
+				</p>
+			</div>
+			<div class="col-md-6 order-1 text-center">
+				<img id="me" src="../images/me.jpg" class="img-fluid rounded-circle border border-light my-5">
+			</div>	
+		</div>
+</div>
+<!-- Projects Section -->
+<div id="container my-5 p-5 mx-auto" align='center'>
+    <h1 class="my-5 p-4">Project Gallery</h1><br/>
+
+    <div class="thumbnails col-md-6 mx-auto">
+        <img onmouseover="preview.src=img1.src" name='img1' src="../images/pic2.jpg" class="img-fluid" />
+        <img onmouseover="preview.src=img2.src" name='img2' src="../images/bootstrap-icons.png" class="img-fluid" />
+        <img onmouseover="preview.src=img3.src" name='img3' src="../images/lastpic.png" class="img-fluid" />
+        <img onmouseover="preview.src=img4.src" name='img4' src="../images/html.jpg" class="img-fluid" />
+        <img onmouseover="preview.src=img5.src" name='img5' src="../images/Rest-API-introduction.jpg" class="img-fluid" />
+    </div>
+    <br/>
+
+    <div class="preview col-md-6 mx-auto mb-5" align='center'>
+        <img name='preview' src="../images/Rest-API-introduction.jpg" class="img-fluid"/>
+    </div>
+</div>
+
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">☝️</button>
+
+<!-- Tools Section -->
+<h2 class="text-center my-5 text-warning">Tools That I Used</h2>
+<div class="container-fluid text-center" id="Tools">
+	<div class="row col text-center my-3 mx-auto " class="img-fluid">
+		<div class="col-4 col-md-4 mb-4 "class="card" >
+				<img src="../images/logo-git.png" class="img-fluid" >
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#git">Git</h4>
+				<p id="git" class="collapse" class="text-justify my-3 d-none d-lg-block ">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4 "class="card">
+			<img src="../images/logo-gitlab-ci-cd.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#gitlab">Gitlab</h4>
+				<p id="gitlab" class="collapse" class="text-justify my-3 d-none d-lg-block">GitLab is The DevOps platform that empowers organizations to maximize the overall return on software development by delivering software faster and efficiently, while strengthening security and compliance. With GitLab, every team in your organization can collaboratively plan, build, secure, and deploy software to drive business outcomes faster with complete transparency, consistency and traceability.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4"class="card">
+			<img src="../images/logo-heroku.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#heroku">Heroku</h4>
+				<p id="heroku" class="collapse" class="text-justify my-3 d-none d-lg-block">Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps — we're the fastest way to go from idea to URL, bypassing all those infrastructure headaches.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4"class="card">
+			<img src="../images/logo-postman.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#postman">Postman</h4>
+				<p id="postman" class="collapse" class="text-justify my-3 d-none d-lg-block">Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4"class="card">
+			<img src="../images/logo-mongodb.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#mongo">MongoDB</h4>
+				<p id="mongo" class="collapse" class="text-justify my-3 d-none d-lg-block">MongoDB is a document database used to build highly available and scalable internet applications. MongoDB is built on a scale-out architecture that has become popular with developers of all kinds for developing scalable applications with evolving data schemas.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4"class="card">
+			<img src="../images/logo-nodejs.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#node">NodeJs</h4>
+				<p id="node" class="collapse" class="text-justify my-3 d-none d-lg-block">Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. It represents a "JavaScript everywhere" paradigm, unifying web-application development around a single programming language, rather than different languages for server-side and client-side scripts.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4"class="card">
+			<img src="../images/logo-sublime-text-3.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#sub">Sublime-text 3</h4>
+				<p id="sub" class="collapse" class="text-justify my-3 d-none d-lg-block">Sublime Text 3 is a code editor software program that allows you to be able to write code efficiently. Here you can do all that you want within the coding process, and it has a solid number of plugins and packages to customize the platform directly to your needs. It was built based on Python and C++.</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4" class="card">
+			<img src="../images/logo-bootstrap.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block"data-toggle="collapse" data-target="#boot">Bootstrap</h4>
+				<p id="boot" class="collapse" class="text-justify my-3 d-none d-lg-block">Bootstrap is a free front-end framework for faster and easier web development.	It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins.
+				It also gives you the ability to easily create responsive design</p>
+		</div>
+		<div class="col-4 col-md-4 mb-4" class="card">
+			<img src="../images/logo-expressjs.png" class="img-fluid">
+				<h4 class="text-center my-3 d-none d-md-block" data-toggle="collapse" data-target="#express">ExpressJs</h4>
+				<p id="express" class="collapse" class="text-justify my-3 d-none d-lg-block">ExpressJS is considered as minimal as well as flexible web application framework of Node.js which gives robust features for use of the web as well as mobile applications. ExpressJS is also considered as an open source framework and it was developed and maintained by the foundation of NodeJS..</p>
+		</div>	
+	</div>
+</div>
+
+<!-- cute images -->
+<h2 class="text-center my-5">Cool Photo</h2>
+    <button id="btn1" class="btn1">Load More</button>
+    <img id="image" class="image img-fluid ">
+
+    
+</div>
+<!-- Contacts Section -->
+<div class="container-fluid  my-5" id="Contacts">
+	<div class="row mx-auto">
+		<div class="col-md-6 my-5 " class="img-fluid">
+			<h3 class="text-center my-4 ">My Location!</h3>
+				<!-- Map from https://www.embedgooglemap.net/ -->
+				<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=diego%20silang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		</div>
+		<div class="col-md-6 my-5" class="img-fluid">
+			<h3 class="text-center my-4 ">Send Inquiry</h3>
+			<form method="POST" action="send.php" enctype="form-control">
+				<div class="form-group">
+					<label for="text-name">Name:</label>
+					<input type="Name" name="Name" id="text-name" placeholder="Enter Full Name" class="form-control" autocomplete required>
+				</div>
+				<div class="form-group">
+					<label for="text-email">Email:</label>
+					<input type="email" name="email" id="text-email" placeholder="name@sample.com" class="form-control" autocomplete required>
+				</div>
+				<div class="form-group">
+					<label for="text-textarea">Message:</label>
+					<textarea class="form-control" id="text-textarea" rows="3">
+					</textarea>
+				</div>
+				<button type="submit" value="Submit" class="btn btn-info btn-block my-5">Submit</button>
+			</form>
+		</div>
+	</div>
+	<!-- end of container -->
+</div>
+<!-- end of the main content -->
+</div>
+<!-- Footer -->
+<footer class="text-center img-fluid mx-auto">
+		<span>Shiela Rose Marilao</span>
+		<span>|</span>
+		<span>Capstone 1</span>
+		<span>|</span>
+		<span>&copy;All Rights Reserved 2021.</span>
+		<div class="d-flex justify-content-center">
+		<a href="https://www.github.com/Shiela-1028" target="_blank" class="mx-3">
+			<i class="fab fa-github"></i></a>
+		<a href="https://gitlab.com/Shan1028" target="_blank" class="mx-3">
+			<i class="fab fa-gitlab"></i></a>
+		<a href="https://www.linkedin.com/in/shielarosemarilao" target="_blank" class="mx-3">
+			<i class="fab fa-linkedin"></i>
+		</a>
+
+	</div>
+
+	</footer>
+
+    <!-- JS Dependancies -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+    <!-- Jquery CDN -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
